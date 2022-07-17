@@ -99,8 +99,6 @@ p {
     color: #585858;
 }
 
-/*laptop screen*/
-
 @media all and (min-width: 800px) {
 
     .main {
@@ -125,8 +123,6 @@ p {
 
 }
 
-/*tablet screen*/
-
 @media all and (min-width: 600px) {
 
     .aside {
@@ -142,11 +138,11 @@ p {
         height: 150px;
         margin: 1em;
     }
+    
 }
 
-/*mobile screen*/
 
-@media all and (min-width:350px) {
+@media all and (max-width:600px) {
 
     .main-title {
         font-size: 1.5em;
