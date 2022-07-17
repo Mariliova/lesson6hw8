@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+
+.header,
+.main,
+.left,
+.right,
+.footer {
+    text-align: center;
+    flex: 1 100%;
+}
+
+.footer,
+.header {
+    height: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #FFFFFF;
+}
+
+i {
+    font-size: 2em;
+    font-family: inherit;
+}
+
+.main-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: .2em;
+    margin: 1em;
+    border-bottom: 3px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: #0396FF;
+}
+
+.news {
+    text-align: center;
+    padding: 1em 1em;
+    margin: 1em auto;
+    background-color: #FFFFFF;
+    max-width: 15vw;
+}
+
+/*cards*/
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.card {
+    flex: 1 17%;
+    border: none;
+    border-radius: 5%;
+    transition: 0.5s;
+    background-color: #FFFFFF;
+}
+
+.card:hover {
+    box-shadow: 10px 5px 5px #E0E0E0;
+    transform: skew(-0.01turn, 3deg);
+    cursor: pointer;
+}
+
+.gradient {
+    width: 100%;
+    height: 170px;
+    border-radius: 5% 5% 0 0;
+}
+
+p {
+    font-weight: 600;
+}
+
+.p1color {
+    color: #585858;
+}
+
+/*laptop screen*/
+
+@media all and (min-width: 800px) {
+
+    .main {
+        flex: 10 0px;
+    }
+
+    .left {
+        order: 1;
+    }
+
+    .main {
+        order: 2;
+    }
+
+    .right {
+        order: 3;
+    }
+
+    .footer {
+        order: 4;
+    }
+
+}
+
+/*tablet screen*/
+
+@media all and (min-width: 600px) {
+
+    .aside {
+        flex: 1 auto;
+    }
+
+    .cards-container {
+        margin: 1em;
+    }
+
+    .news {
+        max-width: 300px;
+        height: 150px;
+        margin: 1em;
+    }
+}
+
+/*mobile screen*/
+
+@media all and (min-width:350px) {
+
+    .main-title {
+        font-size: 1.5em;
+        padding: .5em;
+    }
+
+    p {
+        font-size: .7em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .cards-container {
+        margin: 1em;
+    }
+
+    .gradient {
+        height: 100px;
+    }
+
+    .news {
+        max-width: 90%;
+        min-height: 50px;
+        margin: 1em auto;
+        padding: .1em;
+    }
+
+    i {
+        font-size: 1.5em;
+    }
+
+}
+
+/*sets*/
+
+.set1 {
+    background: linear-gradient(0.45turn, #FDEB71, #F8D800);
+}
+
+.color1 {
+    color: #F8D800;
+}
+
+.set2 {
+    background: linear-gradient(0.45turn, #ABDCFF, #0396FF);
+}
+
+.color2 {
+    color: #0396FF;
+}
+
+.set3 {
+    background: linear-gradient(0.45turn, #E2B0FF, #9F44D3);
+}
+
+.color3 {
+    color: #9F44D3;
+}
+
+.set4 {
+    background: linear-gradient(0.45turn, #FFF6B7, #F6416C);
+}
+
+.color4 {
+    color: #F6416C;
+}
+
+.set5 {
+    background: linear-gradient(0.45turn, #FCCF31, #F55555);
+}
+
+.color5 {
+    color: #F55555;
+}
+
+.set6 {
+    background: linear-gradient(0.45turn, #F97794, #623AA2);
+}
+
+.color6 {
+    color: #623AA2;
+}
+
+.set7 {
+    background: linear-gradient(0.45turn, #81F888, #28C76F);
+}
+
+.color7 {
+    color: #28C76F;
+}
+
+.set8 {
+    background: linear-gradient(0.45turn, #FAD7A1, #E96D71);
+}
+
+.color8 {
+    color: #E96D71;
+}
+
+.set9 {
+    background: linear-gradient(0.45turn, #F761A1, #8C1BAB);
+}
+
+.color9 {
+    color: #8C1BAB;
+}
+
+.set10 {
+    background: linear-gradient(0.45turn, #CEFCE8, #736EFE);
+}
+
+.color10 {
+    color: #736EFE;
+}
+
+.set11 {
+    background: linear-gradient(0.45turn, #6DD5FA, #2980B9);
+}
+
+.color11 {
+    color: #2980B9;
+}
+
+.set12 {
+    background: linear-gradient(0.45turn, #F16529, #E44D26);
+}
+
+.color12 {
+    color: #E44D26;
+}
+
+.set13 {
+    background: linear-gradient(0.45turn, #F8FFAE, #43C6AC);
+}
+
+.color13 {
+    color: #43C6AC;
+}
+
+.set14 {
+    background: linear-gradient(0.45turn, #EC6EAD, #3494E6);
+}
+
+.color14 {
+    color: #3494E6;
+}
+
+.set15 {
+    background: linear-gradient(0.45turn, #004FF9, #FFF94C);
+}
+
+.color15 {
+    color: #004FF9;
+}
